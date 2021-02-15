@@ -20,7 +20,12 @@ DefaultContentLanguage: en
 ## Option to disable additional language in your site.
 # disableLanguages: ["ru"]
 
-disableKinds: ["sitemap","RSS"]
+# disableKinds: ["sitemap","RSS"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
 
 # Option to specify that all links will be open in a new tab.
 blackfriday:
@@ -39,7 +44,7 @@ Taxonomies:
 params:
   # parameter used to specify the number of article in each row 
   # for the summary pages, the possible options are: 2, 3, 4, 5 or 6
-  articlesPerRow: 3 
+  articlesPerRow: 3
 
   # option to specify the favicon image of the site
   # the path is relative to the folder "assetDir" of this configuration
@@ -86,7 +91,7 @@ params:
     # option to specify the font used in the navbar
     fontFamily: "Open Sans"
     # option to show the little logos on the side of the navbar items
-    showIcons: false
+    showIcons: true
     
   # 404 page options
   pagNotFound:
@@ -115,6 +120,7 @@ params:
     image: "/images/molssi_logo.png" # worker.svg 
     # option to specify the width of the image in the homepage
     imageWidth: 500px
+    linkPosition: "menu"
 
   # footer options
   footer:
@@ -159,6 +165,9 @@ languages:
   en:
     languageName:       English
     weight:             1
+  ru:
+    languageName:       Russian
+    weight:             2
     # When Specifying different parameters for a different language 
     # you need to specify all the mandatory sub-parameters as well.
     # E.g.: if you specify the "homepage" parameter then you need to
