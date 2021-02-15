@@ -4,6 +4,8 @@ title: MolSSI MM Portal
 theme: hugo-refresh
 # theme: ../..
 
+enableGitInfo: true
+
 #########################################
 ######## Uncomment this option ##########
 #########################################
