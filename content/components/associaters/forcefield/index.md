@@ -1,9 +1,8 @@
 ---
 title: "Forcefield parameter associater"
-date: 2021-02-14
-author: MolSSI
 draft: true
 hideLastModified: false
+developer: Andrew Abi-Mansour
 showInMenu: false
 summaryImage: "images/icon.png" 
 summary: "Generates parameterized molecules from existing force fields"
@@ -16,9 +15,9 @@ This component is *usable* with a *stable* **API** and **schemas**. However, it 
 
 # Usage
 {{< tabsCode
-    file1="/content/components/assemblers/ff-assoc/input.md" title1="Input" language1="python" icon1="python"
-    file2="/content/components/assemblers/ff-assoc/api.md" title2="API" language2="python" icon2="python"
-    file3="/content/components/assemblers/ff-assoc/output.md" title3="Output" language3="python" icon3="python"
+    file1="/content/components/associaters/forcefield/input.md" title1="Input" language1="python" icon1="python"
+    file2="/content/components/associaters/forcefield/api.md" title2="API" language2="python" icon2="python"
+    file3="/content/components/associaters/forcefield/output.md" title3="Output" language3="python" icon3="python"
 >}}
 
 # Design
