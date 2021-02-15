@@ -22,7 +22,7 @@ This component is *usable* with a *stable* **API** and **schemas**. However, it 
 >}}
 
 # Design
-This component provides 4 models derived from MMSchema. The input models are:
+There are 4 models derived from MMSchema. The input models are:
 - [DockInput](https://github.com/MolSSI/mmic_docking/blob/master/mmic_docking/models/input.py#L8)
 - [ComputeInput](https://github.com/MolSSI/mmic_docking/blob/master/mmic_docking/models/input.py#L14)
 
@@ -38,7 +38,7 @@ The output models are:
 from mmic_ffpa.models.output import ParamOutput, ComputeOutput
 ```
 
-This component provides 3 components for associating the force field parameters to a given MMSchema molecule: 
+There are 3 components used in this package for associating the force field parameters to a given MMSchema molecule: 
 - [PrepComponent](https://github.com/MolSSI/mmic_docking/blob/master/mmic_docking/components/prep_component.py#L7): pre-processes the input for compute
 - [ComputeComponent](https://github.com/MolSSI/mmic_docking/blob/master/mmic_docking/components/post_component.py#L5): run the compute
 - [PostComponent](https://github.com/MolSSI/mmic_docking/blob/master/mmic_docking/components/post_component.py#L5): post-processes the output
