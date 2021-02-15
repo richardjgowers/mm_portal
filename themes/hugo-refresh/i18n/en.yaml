@@ -18,3 +18,5 @@
   translation: "Contacts"
 - id: homepage
   translation: "Homepage"
+- id: allComps
+  translation: "All Components"
