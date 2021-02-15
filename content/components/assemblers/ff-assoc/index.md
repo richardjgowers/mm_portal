@@ -48,8 +48,8 @@ This package provides 3 components used for associating the force field paramete
 # Requirements
 - [MMElemental](https://github.com/MolSSI/MMElemental)
 - [MMIC](https://github.com/MolSSI/mmic)
-- [FF translator](http://localhost:1313/tags/translators)
-- [Mol translator](http://localhost:1313/tags/translators)
+- [FF translator](/tags/translators)
+- [Mol translator](/tags/translators)
 
 # Supported force fields
 - [Amber94](https://pubs.acs.org/doi/abs/10.1021/ja00124a002): Second Generation Amber-based force field for the simulation of proteins, nucleic acids, and organic molecules
