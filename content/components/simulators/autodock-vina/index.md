@@ -1,7 +1,6 @@
 ---
 title: "AutoDock Vina simulator"
-date: 2021-02-14
-author: MolSSI
+developer: Levi Naden, Sam Ellis, Andrew Abi-Mansour
 draft: true
 hideLastModified: false
 showInMenu: false

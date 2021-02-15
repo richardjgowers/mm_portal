@@ -2,7 +2,9 @@
 title: "MMSchema/MDAnalysis translator"
 date: 2021-02-13
 draft: true
-author: MolSSI
+developer: Andrew Abi-Mansour
+affiliation: MolSSI
+link: http://www.molssi.org
 hideLastModified: false
 showInMenu: false
 summaryImage: "images/icon.png"

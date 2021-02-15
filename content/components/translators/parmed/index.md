@@ -2,7 +2,7 @@
 title: "MMSchema/ParmEd translator"
 date: 2021-02-12
 draft: true
-author: MolSSI
+developer: Andrew Abi-Mansour
 hideLastModified: false
 showInMenu: false
 summaryImage: "images/icon.png"

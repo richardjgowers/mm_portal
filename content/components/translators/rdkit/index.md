@@ -2,7 +2,7 @@
 title: "MMSchema/RDKit translator"
 date: 2021-02-14
 draft: true
-author: MolSSI
+developer: Andrew Abi-Mansour
 hideLastModified: false
 showInMenu: false
 summaryImage: "images/icon.png"
