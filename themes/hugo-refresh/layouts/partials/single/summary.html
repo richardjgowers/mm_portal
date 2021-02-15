@@ -54,6 +54,14 @@
           {{- .Plain -}}
         {{- end -}}
       </p> 
+      <p class="refresh-summary">
+        {{- if .Params.author -}}
+          <b>Author</b>: <u>{{ .Params.author }}</u>
+        {{- else }}
+          <b>Author</b>: <u>Unknown</u>
+        {{- end -}}
+      </p>
+
       <div class="action has-text-right">
         <a href="{{- .Permalink | relURL -}}" class="button is-primary">
                 {{ i18n "readMore" }}
