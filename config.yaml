@@ -1,4 +1,4 @@
-baseURL: https://example.com
+baseURL: /
 languageCode: en-us
 title: MolSSI MM Portal
 theme: hugo-refresh
@@ -26,7 +26,6 @@ blackfriday:
 
 Taxonomies:
   tag: "tags"
-  andrew: "andrew"
 
 # Supported fonts are:
 # https://fonts.google.com/
@@ -167,8 +166,8 @@ languages:
       homepage:
         title: MM Portal
         subtitle: A MolSSI Portal for Molecular Mechanics Resources
-        image: "/images/best-basil.jpg" # worker.svg 
-        imageWidth: 500px
+        image: "/images/molssi_main.png" # worker.svg 
+        imageWidth: 1716px
       
       # Some sub-parameters of the "footer" parameter
       # can be omitted because the code allows for them to be 
