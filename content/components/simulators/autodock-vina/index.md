@@ -1,5 +1,5 @@
 ---
-title: "AutoDock Vina"
+title: "AutoDock Vina simulator"
 date: 2021-02-14
 author: MolSSI
 draft: true
