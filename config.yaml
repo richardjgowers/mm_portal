@@ -117,7 +117,7 @@ params:
     # option to specify the subtitle in the homepage
     subtitle: Portal for Molecular Mechanics
     # option to specify image in the homepage
-    image: "/images/molssi_logo.png" # worker.svg 
+    image: "/images/polite-squid.png" # worker.svg 
     # option to specify the width of the image in the homepage
     imageWidth: 500px
     linkPosition: "menu"
