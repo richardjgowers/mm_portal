@@ -52,15 +52,15 @@
               {{- if .Site.Params.homepage.linkText -}}
                 {{- print .Site.Params.homepage.linkText -}}
               {{- else -}}
-                {{ i18n "homepage" }}
+                <!-- {{ i18n "homepage" }} -->
               {{- end -}}
             </a>
           {{- end -}}
-          {{ range .Site.RegularPages }}
+          {{ range sort .Site.RegularPages "Title"}}
           {{- if eq .Params.showInMenu true -}}
           <a href="{{- .Permalink | relURL -}}" class="navbar-item is-secondary">
             {{- if $showIcons -}}
-              <i class="fa fa-file-text" style="color:{{- print $mainColour -}};">&nbsp;</i>
+              <!-- <i class="fa fa-file-text" style="color:{{- print $mainColour -}};">&nbsp;</i> -->
             {{- end -}}
             {{- .Title -}}
           </a>
