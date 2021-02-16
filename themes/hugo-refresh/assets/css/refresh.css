@@ -158,3 +158,8 @@ div.scroll::-webkit-scrollbar { width: 0px; }
 /* .hide{
     display: none;
 } */
+
+
+.aligncenter {
+    text-align: center;
+}
