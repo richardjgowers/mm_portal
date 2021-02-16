@@ -16,7 +16,7 @@ The Molecular Mechanics Interoperable Components (MMIC) project provides a stand
 Components in the MMIC world behave like structured "boxes" with a common API. Each component has well-defined input and output schemas, with complete unawareness of other components used in the workflow.
 
 <p class="aligncenter">
-<img src="images/component.png" caption="Schematic diagram of the component and its data (schemas) flow.">
+<img src="/images/component.png" caption="Schematic diagram of the component and its data (schemas) flow.">
 </p>
 
 Each component does internal data validation to ensure the input and output models are compliant with the specified schemas. Using any component requires a single class method to be invoked:
