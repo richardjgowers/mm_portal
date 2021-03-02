@@ -50,11 +50,12 @@
             {{- if $showIcons -}}
               <i class="fa fa-home" style="color:{{- print $mainColour -}};">&nbsp;</i>
             {{- end -}}
+            <!--
             {{- if .Site.Params.homepage.linkText -}}
               {{- print .Site.Params.homepage.linkText -}}
             {{- else -}}
-              <!-- {{ i18n "homepage" }} -->
-            {{- end -}}
+              {{ i18n "homepage" }}
+            {{- end -}} -->
           </a>
         {{- end -}}
         {{ range sort .Site.RegularPages "Title" }}
