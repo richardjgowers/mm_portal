@@ -8,4 +8,4 @@ showInMenu: true
 ---
 
 # What is MMElemental?
-...
+Under development
