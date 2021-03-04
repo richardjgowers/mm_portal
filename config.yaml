@@ -133,7 +133,7 @@ params:
       title: Email
     # option to specify your linkedin profile in the footer
     linkedin: 
-      link: https://www.linkedin.com/groups/13503505/
+      link: groups/13503505/
       title: LinkedIn
     # option to specify your facebook account in the footer; 
     # **uncomment** the lines below to show in footer
