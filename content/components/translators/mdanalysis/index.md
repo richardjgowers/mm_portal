@@ -13,7 +13,7 @@ tags: ["Translators", "MMSchema"]
 ---
 
 
-{{< siteBlue "Experimental" "https://github.com/MolSSI/mmic_mda" >}}
+{{< siteBlue "Unreleased" "https://github.com/MolSSI/mmic_mda" >}}
 This component is *usable* with a *stable* **API** and **schemas**. However, it is *buggy*.
 
 [//]: # (Badges)
@@ -24,7 +24,9 @@ This component is *usable* with a *stable* **API** and **schemas**. However, it 
 {{< /siteBlue >}}
 
 # Design
-This package provides translators between MMSchema and [MDAnalysis](https://github.com/MDAnalysis/mdanalysis). **mmic_mda** provides 3 types of translators for: molecule, forcefield, and trajectory. The models for each type is respectively: MdaMol, MdaFF, and MdaTraj. The `from_schema` and `to_schema` methods in each model use translation components to convert between MMSchema and MDAnalysis.
+This package provides translators between MMSchema and [MDAnalysis](https://github.com/MDAnalysis/mdanalysis) for the following objects: molecule, forcefield, and trajectory. The models for each object is, respectively: MdaMol, MdaFF, and MdaTraj. The `from_schema` and `to_schema` methods in each model use translation components to convert between MMSchema and MDAnalysis.
+
+The input and output models/schemas for this component are `TransInput` and `TransOutput` available from the generic [mmic_translator](https://github.com/MolSSI/mmic_translator) component.
 
 {{< figure src="images/summary.png" width="1200" caption="Schematic diagram of the component and its data (schemas) flow.">}}
 
@@ -36,9 +38,3 @@ This package provides translators between MMSchema and [MDAnalysis](https://gith
 
 ### Copyright
 Copyright (c) 2021, MolSSI
-
-
-#### Acknowledgements
- 
-Project based on the 
-[Computational Molecular Science Python Cookiecutter](https://github.com/molssi/cookiecutter-cms) version 1.5.

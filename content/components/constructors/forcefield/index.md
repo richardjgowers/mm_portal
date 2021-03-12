@@ -5,12 +5,17 @@ hideLastModified: false
 developer: Andrew Abi-Mansour
 showInMenu: false
 summaryImage: "images/icon.png" 
-summary: "Generates parameterized molecules from existing force fields"
-tags: ["Assemblers", "ForceFields"]
+summary: "Assigns force field parameters to molecules based on existing force fields"
+tags: ["Constructors", "ForceFields"]
 ---
 
-{{< siteBlue "Experimental" "https://github.com/MolSSI/mmic_ffpa" >}}
+{{< siteBlue "Unreleased" "https://github.com/MolSSI/mmic_ffpa" >}}
 This component is *usable* with a *stable* **API** and **schemas**. However, it is *buggy*.
+
+[//]: # (Badges)
+[![GitHub Actions Build Status](https://github.com/MolSSI/mmic_ffpa/workflows/CI/badge.svg)](https://github.com/MolSSI/mmic_ffpa/actions?query=workflow%3ACI)
+[![codecov](https://codecov.io/gh/MolSSI/mmic_ffpa/branch/master/graph/badge.svg)](https://codecov.io/gh/MolSSI/mmic_ffpa/branch/master)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/MolSSI/mmic_ffpa.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/MolSSI/mmic_ffpa/context:python)
 {{< /siteBlue >}}
 
 # Design
@@ -34,8 +39,8 @@ There are 3 components used for assigning the force field parameters to a given 
 
 # Snippet
 {{< tabsCode
-    file1="/content/components/associaters/forcefield/models.md" title1="Models" language1="python" icon1="python"
-    file2="/content/components/associaters/forcefield/components.md" title2="Components" language2="python" icon2="python"
+    file1="/content/components/constructors/forcefield/models.md" title1="Models" language1="python" icon1="python"
+    file2="/content/components/constructors/forcefield/components.md" title2="Components" language2="python" icon2="python"
 >}}
 
 # Requirements
