@@ -16,7 +16,7 @@ The Molecular Mechanics Interoperable Components (MMIC) project provides a stand
 Components in the MMIC world behave like structured "boxes" with a common API. Each component has well-defined input and output schemas, with complete unawareness of other components used in the workflow.
 
 <p class="aligncenter">
-<img src="/images/component.png" caption="Schematic diagram of the component and its data (schemas) flow.">
+<img src="/images/component.png">
 </p>
 
 Each component does internal data validation to ensure the input and output models are compliant with the specified schemas. Using any component requires a single class method to be invoked:
@@ -36,7 +36,7 @@ A class II component is, in contrast, tailored to a specific code in an applicat
 component therefore automates the selection and execution of an appropriate class II component during run time, enabling a higher level of abstraction.
 
 <p class="aligncenter">
-<img src="/images/classes.png" width="900" caption="Schematic diagram of the component and its data (schemas) flow.">
+<img src="/images/classes.png" width="900">
 </p>
 
 # Data validation
