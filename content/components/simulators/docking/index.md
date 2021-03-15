@@ -5,7 +5,7 @@ draft: true
 hideLastModified: false
 showInMenu: false
 summaryImage: "images/icon.png" 
-summary: "Performs molecular docking with a range of engines"
+summary: "Performs molecular docking with any of the supported docking engines"
 tags: ["Simulators", "Generic"]
 ---
 
