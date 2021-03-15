@@ -1,5 +1,5 @@
 ---
-title: "AutoDock Vina Simulator"
+title: "AutoDock Vina simulator"
 developer: Levi Naden, Sam Ellis, Andrew Abi-Mansour
 draft: true
 hideLastModified: false
