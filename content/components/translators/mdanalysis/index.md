@@ -24,11 +24,14 @@ This component is *usable* with a *stable* **API** and **schemas**. However, it 
 {{< /siteBlue >}}
 
 # Design
-This package provides translators between MMSchema and [MDAnalysis](https://github.com/MDAnalysis/mdanalysis) for the following objects: molecule, forcefield, and trajectory. The models for each object is, respectively: MdaMol, MdaFF, and MdaTraj. The `from_schema` and `to_schema` methods in each model use translation components to convert between MMSchema and MDAnalysis.
+This package provides translators between [MMSchema](/mmschema) and [MDAnalysis](https://github.com/MDAnalysis/mdanalysis) for the following objects: molecule, forcefield, and trajectory. The models for each object is, respectively: MdaMol, MdaFF, and MdaTraj. The `from_schema` and `to_schema` methods in each model use translation components to convert between MMSchema and MDAnalysis.
 
 The input and output models/schemas for this component are `TransInput` and `TransOutput` available from the generic [mmic_translator](https://github.com/MolSSI/mmic_translator) component.
 
 {{< figure src="images/summary.png" width="1200" caption="Schematic diagram of the component and its data (schemas) flow.">}}
+
+# Compatibility
+- [mmic_translator](https://github.com/MolSSI/mmic_translator)
 
 # Snippet
 {{< tabsCode
