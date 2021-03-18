@@ -8,7 +8,7 @@ developer: Andrew Abi-Mansour
 summary: "Creating your 1st component"
 ---
 
-# Getting started
+# Package creation
 There are infinite ways you could build your own component in MMIC. An easy and quick way to get started is by using
 the CMS cookiecutter, which you can install via pip and then interactively run to create a git repository:
 {{< code language="bash" line-numbers="false">}}
@@ -32,3 +32,9 @@ After you're done answering all the questions, you should end up with a git dire
     ├── models
     └── tests
 {{< /code >}}
+
+# Models
+
+# Components
+
+# Package deployment
