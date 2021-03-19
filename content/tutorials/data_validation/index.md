@@ -4,13 +4,16 @@ draft: true
 hideLastModified: true
 showInMenu: false
 summaryImage: "images/icon.png"
-developer: Samuel Ellis
+developer: Samuel Ellis, Andrew Abi-Mansour
 summary: "Parsing and validating schemas with pydantic"
 ---
 
+# Prerequisites
+
+This tutorial explains how pydantic is used in MMIC to parse and validate schemas. This tutorial assumes you're familiar with the python programming language
+and the basics of MM components. If not, you should 1st go over the "getting started" [tutorial](/tutorials/getting_started).
+
 # Introduction 
-<p This tutorial extends the basic concepts introduced in the "getting started" [tutorial](/tutorials/getting_started). Specifically,
-this tutorial explains how pydantic is used in MMIC to parse and validate schemas.</p>
 
 <p id="data_valid">Python does not inherently enforce typing of functions or variables at
 runtime. Instead, python allows for type hints to be specified in order to
