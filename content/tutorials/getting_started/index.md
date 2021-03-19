@@ -8,7 +8,14 @@ developer: Andrew Abi-Mansour
 summary: "Creating your 1st component"
 ---
 
+# Prerequisites
+
+It is recommended that you familiarize yourself with the python programming language and best practices in software engineering before delving into this tutorial.
+The MolSSI [education hub](http://education.molssi.org/resources.html) provides plenty of materials on software development that make this tutorial easier to follow
+and understand.
+
 # Package creation
+
 There are infinite ways you could build your own components in MMIC. An easy and quick way to get started is by using
 [cookiecutter](https://github.com/cookiecutter/cookiecutter), which you can install via pip and then interactively run to create a git repository:
 {{< code language="bash" line-numbers="false">}}
@@ -111,3 +118,8 @@ mol_formula
 {{< /code >}}
 
 As you can see, components in the MMIC world use pydantic to parse and validate the input and output data they receive and produce. For more information on data validation, see the [tutorial](/tutorials/data_validation/) on data validation.
+
+# Package deployment
+
+You can package and deploy your component the same way you would with any other python package. See the official [python](http://packaging.python.org) resource for more info on packages and the 
+Python Package Index (PyPi).
