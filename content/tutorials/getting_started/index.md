@@ -67,6 +67,18 @@ In the 'pkg_name/components' dir, you'll find a **component.py** that defines a 
     file2="/content/tutorials/getting_started/code/component.md" title2="Component" language2="python" icon2="python"
 >}}
 
+Note the 3 required methods already defined in this component:
+- input: classmethod that returns the input schema/model
+- output: classmethod that returns the output schema/model
+- execute: method that recevies an input modal, does the execution, and returns an output model 
+
+Note also that `Component` is a subclass of `GenericComponent`, which under the hood uses the `cls.input` to validate the input data and `cls.output` to validate the
+output data `self.execute` returns. This is achieved via the `GenericComponent.compute` method, which should not be overwritten. Otherwise, developers can attach any other 
+method of their choice to `Component`. For more info on how components are designed, see the [MMIC](https://github.com/MolSSI/mmic) repository.
+
+We're going to modify the `self.execute` method by counting the number of atoms in the supplied molecular formula, then return the output model. Note that the boolean variable `True` 
+signifies successful execution. The code is shown in the **Component** tab.
+
 ## Putting it altogether
 
 You can now use **setup.py** included with **mmic_pkg** to install the component. From the root directory run:
@@ -81,8 +93,7 @@ Using this component is straight forward as shown below.
     file2="/content/tutorials/getting_started/code/run-invalid.md" title2="Invalid" language2=python icon2="python"
 >}}
 
-In the **Valid** tab, the `mol_formula` is of type `str`, which leads to a successful execution. 
-
+In the **Valid** tab, the `mol_formula` is of type `str`, which leads to successful execution:
 {{< code language="bash" line-numbers="false">}}
   Number of atoms in CH4 is 5
 {{< /code >}}
