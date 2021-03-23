@@ -1,11 +1,11 @@
 from typing import List, Tuple, Optional
-from mmic.components.blueprints.generic_component import GenericComponent
+from mmic.components.blueprints import SpecificComponent
 from ..models import *
 
 __all__ = ["Component"]
 
 
-class Component(GenericComponent):
+class Component(SpecificComponent):
     """ A sample component that defines the 3 required methods. """
 
     @classmethod
