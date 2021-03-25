@@ -1,6 +1,6 @@
 ---
 title: "AutoDock Vina simulator"
-developer: Levi Naden, Sam Ellis, Andrew Abi-Mansour
+developer: Andrew Abi-Mansour
 draft: true
 hideLastModified: false
 showInMenu: false
