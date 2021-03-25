@@ -1,11 +1,11 @@
 ---
-title: "Docking simulator"
-developer: Andrew Abi-Mansour
+title: "Molecular docking simulator"
+developer: Levi Naden, Sam Ellis, Andrew Abi-Mansour
 draft: true
 hideLastModified: false
 showInMenu: false
 summaryImage: "images/icon.png" 
-summary: "Performs molecular docking with any of the supported docking engines"
+summary: "Performs molecular docking with any of the supported docking components"
 tags: ["Simulators", "Generic"]
 ---
 
