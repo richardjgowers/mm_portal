@@ -1,5 +1,5 @@
 ---
-title: "Forcefield parameter associater"
+title: "Forcefield parameter assigner"
 draft: true
 hideLastModified: false
 developer: Andrew Abi-Mansour
@@ -10,7 +10,7 @@ tags: ["Constructors", "ForceFields"]
 ---
 
 {{< siteBlue "Unreleased" "https://github.com/MolSSI/mmic_ffpa" >}}
-This component is *usable* with a *stable* **API** and **schemas**. However, it is *buggy*.
+This component is *usable* with relatively *stable* **schemas**. However, it is *buggy*.
 
 [//]: # (Badges)
 [![GitHub Actions Build Status](https://github.com/MolSSI/mmic_ffpa/workflows/CI/badge.svg)](https://github.com/MolSSI/mmic_ffpa/actions?query=workflow%3ACI)
@@ -21,7 +21,7 @@ This component is *usable* with a *stable* **API** and **schemas**. However, it 
 # Design
 
 #### Models
-This packages provides 4 models derived from MMSchema. The input models are:
+This package provides 4 models derived from MMSchema. The input models are:
 - [ParamInput](https://github.com/MolSSI/mmic_ffpa/blob/master/mmic_ffpa/models/input.py): external input that defines the input molecule and which force field to use
 - [ComputeInput](https://github.com/MolSSI/mmic_ffpa/blob/master/mmic_ffpa/models/input.py): internal input used for running compute
 
