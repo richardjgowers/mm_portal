@@ -29,13 +29,15 @@ output = Component.compute(input)
 
 The MMIC package is written in python. For more info about the API and component design, see the data validation <a href="#data_valid">section</a> and the online <a href="https://github.com/MolSSI/MMIC">documentation</a>.
 
-# Classes of components
-There are 2 classes of components we distinguish for practical and design considerations. The 1st class is generic and does not perform any scientific tasks. Instead, it provides input/output schemas 
-specific to an application area (e.g. energy minimization, molecular dynamics, normal mode analysis, etc.), and discovers and runs a class II component that has the same input/output schemas. 
-A class II component is, in contrast, tailored to a specific code in an application area (e.g. OpenMM energy minimization, NAMD molecular dynamics, GROMACS normal mode analysis, etc.). 
+# Component design
+To be completed ...
+
+# Component types
+There are 2 distinct types of components we distinguish for practical considerations. The 1st type is `GenericComponent` which does not perform any scientific tasks. Instead, this component provides input/output schemas specific to an application area (e.g. energy minimization, molecular dynamics, normal mode analysis, etc.), and discovers and runs `SpecificComponent` that has the same input/output schemas provided by `GenericComponent`. Therefore, `SpecificComponent` is tailored to a particular code in an application area (e.g. OpenMM energy minimization, NAMD molecular dynamics, GROMACS normal mode analysis, etc.). 
+
 
 <p class="aligncenter">
-<img src="/images/classes.png" width="900">
+<img src="/images/classes.png" width="1200">
 </p>
 
-A class I component therefore automates the selection and execution of an available and compatible class II component during run time, enabling a higher level of abstraction.
+The main objective behind this approach is to provide an easy and intuitive way of handling common (but not universal) features available in different MM codes. If *feature1* is requested in workflow, and this feature is available in *MM code1* but not in *MM code2*, `GenericComponent` run the execution with a `SpecificComponent` that supprots *MM code*. `GenericComponent` therefore automates the selection and execution of an available and compatible `SpecificComponent` in runtime, enabling a higher level of abstraction.
