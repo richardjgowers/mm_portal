@@ -76,7 +76,7 @@ birthday: Optional[str]
 
 # Pydantic BaseModel
 
-TODO: Cover Base Pydantic model, and why it is used.
+[TODO: Cover Base Pydantic model, and why it is used.]
 
 Each component in MMIC has two schema, an Input Schema and an Output Schema.
 Depending on the component the two schemas may be the same or different. To
@@ -125,57 +125,62 @@ will mention `description` as a useful one to include, as it allows for
 more detailed documentation for each variable.
 
 
-For a more concrete example, we can look at the `DockInput` schema for molecular docking.
+For a more concrete example, we can look at the following `SimpleAtom` model.
 
 {{< code language="python" line-numbers="false">}}
-from mmelemental.models.base import SimBase
-from mmelemental.models.molecule import Molecule
-from typing import List, Optional, Tuple, Union
-from pydantic import Field
+from pydantic import BaseModel, Field
+from typing import Optional
 
-class DockInput(SimBase):
-    ligand: Molecule = Field(
-        ..., 
-        description="Molecule model for a candidate ligand (e.g. drug)."
+class SimpleAtom(BaseModel):
+    element: str = Field(
+        ...,
+        description="Element name e.g. C"
     )
-    receptor: Molecule = Field(
-        ..., 
-        description="Molecule model for a receptor (e.g. protein)."
+    mass_number: int = Field(
+        ...
+        description="Atomic mass number."
     )
-    searchSpace: Optional[List[Tuple[float, float, float, float, float, float]]] = Field(
-        None,
-        description="A 3D box defined by (xmin, xmax, ymin, ymax, zmin, zmax).
-        The search space effectively restricts where the movable atoms should lie."
+    x: Optional[float] = Field(
+        None, 
+        description="Atomic position along the x-axis."
     )
 {{< /code >}}
 
-The first thing to notice is that we did not inherit from Pydantic's
-`BaseModel` class. MMIC utilize an extension of the `BaseModel`, and the
-`DockInput` inherits a further extension, the `SimBase`, which is a
-basic simulation schema. Since our inheritance tree includes the
+Note that the ellipsis `...` passed to `Field` indicates a required field. Hence, `element` and `mass_number` are required fields whereas `x` 
+can be optionally assigned and by default take the value `None`.
+
+We will also introduce another model, `Atom`, that describes an atom in 3D.
+
+{{< code language="python" line-numbers="false">}}
+
+class Atom(SimpleAtom):
+    y: Optional[float] = Field(
+        None,
+        description="Atomic position along the y-axis."
+    )
+    z: Optional[float] = Field(
+        None,
+        description="Atomic position along the z-axis."
+    )
+{{< /code >}}
+
+The first thing to notice about the `Atom` class is it does not inherit from Pydantic's
+`BaseModel` class. Since our inheritance tree includes the
 `BaseModel` we will enforce typing on the variables within the schema.
 Similar to normal inheritance, we inherit all of the typed variables from
-our parent class.
+the parent class.
 
-Therefore, the `DockInput` contains all the typed variables from the
-`SimBase` schema, and adds three new variables, `ligand` which is of type
-`Molecule`, `receptor` which is also of type `Molecule` and `searchSpace`
-which is an optional `Tuple` of `floats` that defines a 3D box to search
-within.
+Therefore, the `Atom` model contains all the typed variables from the
+`SimpleAtom` schema (`element`, `mass_number`, and `x`), and adds 2 new variables, `y` which is of type
+`float`, and `z` which is also of type `float`.
 
 # Schema Validation
-
-TODo: Cover basic validation being performed on all the variables in the schema.
-
-TODO: Cover how to add custom validators to a variable in a schema.
-
 
 Pydantic performs validation on all the variables in a schema. By default,
 this means if you specify a type for a variable and pass it a value of a
 different type, it will provide you an error message with useful
 information. Note that we use typed schema variables as keyword arguments,
 not positional arguments.
-
 
 {{< tabsCode
     file1="/content/tutorials/data_validation/code/run.md" title1="run" language1="python" icon1="python"
@@ -190,7 +195,8 @@ as a string. However, since the first variable is looking for an `int` and
 it was passed a string, it rovides information on the variable that had an
 error, and what the expected type was.
 
-As schema become more complicated, simple assignment validation may no
+## Single field validation
+As schemas become more complicated, simple assignment validation may no
 longer be sufficient. In addition, you may wish to assign additional
 conditions to the values of variables outside of simply their type.
 Pydantic supports custom validators to cover these cases.
@@ -207,12 +213,12 @@ method is used for validation, and `ValidationError` can be used to check
 if an error was thrown during validation.
 
 {{< code language="python" line-numbers="false">}}
-from pydantic import BaseModel, validator, ValidationError
+from pydantic import BaseModel, validator
 
 class SchemaExample(BaseModel):
-    var1: int = Field(..., description="This is the first variable for the example schema.")
-    var2: str = Field(..., description="This is the second variable for the example schema.")
-    var3: Optional[float]
+    var1: int = Field(..., description="This is the 1st variable for the example schema.")
+    var2: str = Field(..., description="This is the 2nd variable for the example schema.")
+    var3: Optional[float] 
     
     @validator('var2')
     def var2_alphanumeric(cls, v):
@@ -245,6 +251,55 @@ var2
 A more thorough description of validators and how to write custom ones can
 be found within the [pydantic
 documentation](https://pydantic-docs.helpmanual.io/usage/validators/).
+
+## Multiple field validation
+
+We can also use the same validator on multiple or all fields. For example, let's
+revisit the `SimpleAtom` model we defined earlier and redefine its schemas.
+
+{{< code language="python" line-numbers="false">}}
+from pydantic import BaseModel, Field, validator
+from typing import Optional
+
+class SimpleAtom(BaseModel):
+    atomic_number: int = Field(
+        ...,
+        description="Atomic number, must be > 0."
+    )
+    mass_number: int = Field(
+        ...,
+        description="Atomic mass number, must be > 0."
+    )
+    x: Optional[float] = Field(
+        None,
+        description="Atomic position along the x-axis."
+    )
+
+    @validator("atomic_number", "mass_number")
+    def _must_be_positive(cls, v):
+        if v <= 0:
+            raise ValueError("atomic_number and mass_number must be > 0!")
+        return v
+{{< /code >}}
+
+In this model, the `atomic_number` and `mass_number` are required fields of type `int`. In order to ensure both integers
+are always positive, we define the `_must_be_positive` validator that is applied to both fields. 
+
+Let's test the validator and make sure it works as expected.
+
+{{< code language="python" line-numbers="false">}}
+SimpleAtom(atomic_number=1, mass_number=0)
+
+Traceback (most recent call last):
+  File "test.py", line 24, in <module>
+    SimpleAtom(atomic_number=1, mass_number=0)
+  File "pydantic/main.py", line 400, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for SimpleAtom
+mass_number
+  atomic_number and mass_number must be > 0! (type=value_error)
+{{< /code >}}
+
+[TODO: cover root_validator]
 
 # ProtoModel
 
