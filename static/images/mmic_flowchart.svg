@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="822.72656"
+   version="1.1"
+   width="650"
+   style="overflow:hidden"
+   viewBox="0 0 650 822.72656"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg116"
+   sodipodi:docname="flowchart.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata120">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     id="namedview118"
+     showgrid="false"
+     inkscape:zoom="0.2837471"
+     inkscape:cx="404.53125"
+     inkscape:cy="415.86328"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg116" />
+  <desc
+     id="desc2">Created with Raphaël 2.1.4</desc>
+  <defs
+     id="defs35">
+    <path
+       d="M 5,0 0,2.5 5,5 Z"
+       id="raphael-marker-block"
+       style="stroke-linecap:round"
+       inkscape:connector-curvature="0" />
+    <marker
+       id="raphael-marker-endblock33-obj21"
+       markerHeight="3"
+       markerWidth="3"
+       orient="auto"
+       refX="1.5"
+       refY="1.5">
+      <use
+         xlink:href="#raphael-marker-block"
+         transform="matrix(-0.6,0,0,-0.6,3,3)"
+         style="fill:#000000;stroke:none;stroke-width:1.66670001"
+         id="use5"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </marker>
+    <marker
+       id="raphael-marker-endblock33-obj22"
+       markerHeight="3"
+       markerWidth="3"
+       orient="auto"
+       refX="1.5"
+       refY="1.5">
+      <use
+         xlink:href="#raphael-marker-block"
+         transform="matrix(-0.6,0,0,-0.6,3,3)"
+         style="fill:#000000;stroke:none;stroke-width:1.66670001"
+         id="use8"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </marker>
+    <marker
+       id="raphael-marker-endblock33-obj23"
+       markerHeight="3"
+       markerWidth="3"
+       orient="auto"
+       refX="1.5"
+       refY="1.5">
+      <use
+         xlink:href="#raphael-marker-block"
+         transform="matrix(-0.6,0,0,-0.6,3,3)"
+         style="fill:#000000;stroke:none;stroke-width:1.66670001"
+         id="use11"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </marker>
+    <marker
+       id="raphael-marker-endblock33-obj25"
+       markerHeight="3"
+       markerWidth="3"
+       orient="auto"
+       refX="1.5"
+       refY="1.5">
+      <use
+         xlink:href="#raphael-marker-block"
+         transform="matrix(-0.6,0,0,-0.6,3,3)"
+         style="fill:#000000;stroke:none;stroke-width:1.66670001"
+         id="use14"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </marker>
+    <marker
+       id="raphael-marker-endblock33-obj27"
+       markerHeight="3"
+       markerWidth="3"
+       orient="auto"
+       refX="1.5"
+       refY="1.5">
+      <use
+         xlink:href="#raphael-marker-block"
+         transform="matrix(-0.6,0,0,-0.6,3,3)"
+         style="fill:#000000;stroke:none;stroke-width:1.66670001"
+         id="use17"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </marker>
+    <marker
+       id="raphael-marker-endblock33-obj28"
+       markerHeight="3"
+       markerWidth="3"
+       orient="auto"
+       refX="1.5"
+       refY="1.5">
+      <use
+         xlink:href="#raphael-marker-block"
+         transform="matrix(-0.6,0,0,-0.6,3,3)"
+         style="fill:#000000;stroke:none;stroke-width:1.66670001"
+         id="use20"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </marker>
+    <marker
+       id="raphael-marker-endblock33-obj30"
+       markerHeight="3"
+       markerWidth="3"
+       orient="auto"
+       refX="1.5"
+       refY="1.5">
+      <use
+         xlink:href="#raphael-marker-block"
+         transform="matrix(-0.6,0,0,-0.6,3,3)"
+         style="fill:#000000;stroke:none;stroke-width:1.66670001"
+         id="use23"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </marker>
+    <marker
+       id="raphael-marker-endblock33-obj32"
+       markerHeight="3"
+       markerWidth="3"
+       orient="auto"
+       refX="1.5"
+       refY="1.5">
+      <use
+         xlink:href="#raphael-marker-block"
+         transform="matrix(-0.6,0,0,-0.6,3,3)"
+         style="fill:#000000;stroke:none;stroke-width:1.66670001"
+         id="use26"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </marker>
+    <marker
+       id="raphael-marker-endblock33-obj33"
+       markerHeight="3"
+       markerWidth="3"
+       orient="auto"
+       refX="1.5"
+       refY="1.5">
+      <use
+         xlink:href="#raphael-marker-block"
+         transform="matrix(-0.6,0,0,-0.6,3,3)"
+         style="fill:#000000;stroke:none;stroke-width:1.66670001"
+         id="use29"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </marker>
+    <marker
+       id="raphael-marker-endblock33-obj34"
+       markerHeight="3"
+       markerWidth="3"
+       orient="auto"
+       refX="1.5"
+       refY="1.5">
+      <use
+         xlink:href="#raphael-marker-block"
+         transform="matrix(-0.6,0,0,-0.6,3,3)"
+         style="fill:#000000;stroke:none;stroke-width:1.66670001"
+         id="use32"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </marker>
+  </defs>
+  <rect
+     x="84.773399"
+     y="23.437475"
+     width="107.01562"
+     height="36"
+     rx="20"
+     ry="20"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     class="flowchart"
+     id="st140628166193360" />
+  <text
+     x="94.773399"
+     y="41.437458"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="st140628166193360t"
+     class="flowchartt">
+    <tspan
+       dy="5"
+       id="tspan38">start compute</tspan>
+  </text>
+  <path
+     d="m 16,159.87499 -10,18 h 244.5625 l 20,-36 H 26 l -10,18"
+     id="io140628166193408"
+     class="flowchart"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     inkscape:connector-curvature="0" />
+  <text
+     x="36"
+     y="159.875"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="io140628166193408t"
+     class="flowchartt">
+    <tspan
+       dy="5"
+       id="tspan42">input: component, input_schema</tspan>
+  </text>
+  <path
+     d="M 97.054662,257.69917 55.8281,278.31245 138.28122,319.53902 220.73435,278.31245 138.28122,237.08589 55.8281,278.31245"
+     id="cond140628166199952"
+     class="flowchart"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     inkscape:connector-curvature="0" />
+  <text
+     x="102.05466"
+     y="278.31247"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="cond140628166199952t"
+     class="flowchartt">
+    <tspan
+       dy="5.0078125"
+       id="tspan46">if valid_input</tspan>
+  </text>
+  <rect
+     x="7.7733998"
+     y="401.97659"
+     width="261.01562"
+     height="36"
+     rx="0"
+     ry="0"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     class="flowchart"
+     id="sub140628166200240" />
+  <rect
+     x="17.773399"
+     y="401.97659"
+     width="241.01562"
+     height="36"
+     rx="0"
+     ry="0"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     id="sub140628166200240i" />
+  <text
+     x="27.773399"
+     y="419.97659"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="sub140628166200240t"
+     class="flowchartt">
+    <tspan
+       dy="5"
+       id="tspan51">component.execute(input_schema)</tspan>
+  </text>
+  <path
+     d="m 93.8438,516.19534 -44.4375,22.21875 88.875,44.4375 88.875,-44.4375 -88.875,-44.4375 -88.875,44.4375"
+     id="cond140628166200576"
+     class="flowchart"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     inkscape:connector-curvature="0" />
+  <text
+     x="98.843803"
+     y="538.41412"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="cond140628166200576t"
+     class="flowchartt">
+    <tspan
+       dy="5"
+       id="tspan55">if valid_output</tspan>
+  </text>
+  <path
+     d="m 45.9609,683.28909 -10,18 h 184.64062 l 20,-36 H 55.9609 l -10,18"
+     id="io140628166200816"
+     class="flowchart"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     inkscape:connector-curvature="0" />
+  <text
+     x="65.960899"
+     y="683.28912"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="io140628166200816t"
+     class="flowchartt">
+    <tspan
+       dy="5"
+       id="tspan59">output: output_schema</tspan>
+  </text>
+  <rect
+     x="69.304703"
+     y="783.72662"
+     width="137.95312"
+     height="36"
+     rx="20"
+     ry="20"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     class="flowchart"
+     id="e140628166200768" />
+  <text
+     x="79.304703"
+     y="801.72662"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="e140628166200768t"
+     class="flowchartt">
+    <tspan
+       dy="5"
+       id="tspan63">end function return</tspan>
+  </text>
+  <rect
+     x="356.42191"
+     y="520.41412"
+     width="118.03125"
+     height="36"
+     rx="0"
+     ry="0"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     class="flowchart"
+     id="op140628166200960" />
+  <text
+     x="366.42191"
+     y="538.41412"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="op140628166200960t"
+     class="flowchartt">
+    <tspan
+       dy="5"
+       id="tspan67">raise TypeError</tspan>
+  </text>
+  <rect
+     x="363.85941"
+     y="638.85162"
+     width="103.15625"
+     height="36"
+     rx="20"
+     ry="20"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     class="flowchart"
+     id="e140628166193456" />
+  <text
+     x="373.85941"
+     y="656.85162"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="e140628166193456t"
+     class="flowchartt">
+    <tspan
+       dy="5"
+       id="tspan71">end compute</tspan>
+  </text>
+  <rect
+     x="524.45312"
+     y="260.3125"
+     width="118.03125"
+     height="36"
+     rx="0"
+     ry="0"
+     style="fill:#ffffff;stroke:#000000;stroke-width:3"
+     class="flowchart"
+     id="op140628166200480" />
+  <text
+     x="534.45312"
+     y="278.3125"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="op140628166200480t"
+     class="flowchartt">
+    <tspan
+       dy="5"
+       id="tspan75">raise TypeError</tspan>
+    <tspan
+       dy="16.799999"
+       x="534.45312"
+       id="tspan77" />
+  </text>
+  <path
+     d="m 138.28125,59.437467 c 0,0 0,60.743933 0,77.946793"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-end:url(#raphael-marker-endblock33-obj21)"
+     id="path80"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 138.28125,177.87499 c 0,0 0,40.89415 0,54.71189"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-end:url(#raphael-marker-endblock33-obj22)"
+     id="path82"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 138.28125,319.53905 c 0,0 0,60.7439 0,77.94676"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-end:url(#raphael-marker-endblock33-obj23)"
+     id="path84"
+     inkscape:connector-curvature="0" />
+  <text
+     x="143.28125"
+     y="329.53906"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="text88">
+    <tspan
+       dy="5.0078125"
+       id="tspan86">yes</tspan>
+  </text>
+  <path
+     d="m 220.73437,278.31249 c 0,0 261.54562,0 299.21943,0"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-end:url(#raphael-marker-endblock33-obj25)"
+     id="path90"
+     inkscape:connector-curvature="0" />
+  <text
+     x="225.73438"
+     y="268.3125"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="text94">
+    <tspan
+       dy="5"
+       id="tspan92">no</tspan>
+  </text>
+  <path
+     d="m 138.28125,437.97655 c 0,0 0,38.20077 0,51.50016"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-end:url(#raphael-marker-endblock33-obj27)"
+     id="path96"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 138.28125,582.85155 c 0,0 0,60.7439 0,77.94676"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-end:url(#raphael-marker-endblock33-obj28)"
+     id="path98"
+     inkscape:connector-curvature="0" />
+  <text
+     x="143.28125"
+     y="592.85156"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="text102">
+    <tspan
+       dy="5.0078125"
+       id="tspan100">yes</tspan>
+  </text>
+  <path
+     d="m 227.15625,538.41405 c 0,0 101.91773,0 124.75965,0"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-end:url(#raphael-marker-endblock33-obj30)"
+     id="path104"
+     inkscape:connector-curvature="0" />
+  <text
+     x="232.15625"
+     y="528.41406"
+     font-size="14px"
+     style="font-size:14px;font-family:Arial;text-anchor:start;fill:#000000;stroke:none;stroke-width:1"
+     id="text108">
+    <tspan
+       dy="5.0078125"
+       id="tspan106">no</tspan>
+  </text>
+  <path
+     d="m 138.28125,701.28905 c 0,0 0,60.7439 0,77.94676"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-end:url(#raphael-marker-endblock33-obj32)"
+     id="path110"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 415.4375,556.41405 c 0,0 0,60.7439 0,77.94676"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-end:url(#raphael-marker-endblock33-obj33)"
+     id="path112"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 583.46875,296.31249 c 0,0 0,172.66406 0,172.66406 0,0 -445.1875,0 -445.1875,0 0,0 0,13.30397 0,20.50163"
+     style="fill:none;stroke:#000000;stroke-width:3;marker-end:url(#raphael-marker-endblock33-obj34)"
+     id="path114"
+     inkscape:connector-curvature="0" />
+</svg>
