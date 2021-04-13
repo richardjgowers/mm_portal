@@ -39,8 +39,8 @@ There are 3 components used for assigning the force field parameters to a given 
 
 # Snippet
 {{< tabsCode
-    file1="/content/components/constructors/forcefield/models.md" title1="Models" language1="python" icon1="python"
-    file2="/content/components/constructors/forcefield/components.md" title2="Components" language2="python" icon2="python"
+    file1="/content/components/assigners/forcefield/models.md" title1="Models" language1="python" icon1="python"
+    file2="/content/components/assigners/forcefield/components.md" title2="Components" language2="python" icon2="python"
 >}}
 
 # Requirements
