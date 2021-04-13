@@ -9,25 +9,9 @@ showInMenu: true
 
 # What is MMElemental?
 MMElemental is an implementation of [MMSchema](/mmschema). Specifically, MMElemental is a python package that provides [pydantic](https://pydantic-docs.helpmanual.io/) [models](https://pydantic-docs.helpmanual.io/usage/models/) for the molecular mechanics (MM) world. 
-MMElemental makes it easy to standardize MM applications and pipelines in python based on the MMSchema specification, and it provides interoperability capabilities that allow conversion between different representations of MM objects or file formats.
-
+MMElemental makes it easy to standardize MM applications and workflows in python based on the MMSchema specification, and it provides interoperability capabilities that allow conversion between different representations of MM objects or file formats.
 
 {{< figure src="images/mmelemental.png" width="144" caption="MMElemental is a python implementation of the MMSchema specification.">}}
-
-# MMElemental Models
-MMElemental adopts an object-oriented design of the MM world. Each object in MMElemental represents a building block that is part of the computation. Examples of these data objects or "models" are: 
-
-<a name="Molecule"></a>
-## Molecule
-This model provides a representation of a molecule in the MM world.
-
-<a name="ForceField"></a>
-## ForceField
-This model provides a representation of a force field in the MM world.
-
-## Collections
-<a name="Collections"></a>
-...
 
 # MMElemental in practice
 How is MMElemental useful in practice?
