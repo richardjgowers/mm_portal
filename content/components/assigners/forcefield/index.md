@@ -6,7 +6,7 @@ developer: Andrew Abi-Mansour
 showInMenu: false
 summaryImage: "images/icon.png" 
 summary: "Assigns force field parameters to molecules based on existing force fields"
-tags: ["Constructors", "ForceFields"]
+tags: ["Assigners", "ForceFields"]
 ---
 
 {{< siteBlue "Unreleased" "https://github.com/MolSSI/mmic_ffpa" >}}
