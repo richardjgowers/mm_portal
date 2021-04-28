@@ -1,5 +1,5 @@
 ---
-title: "MMSchema/MDAnalysis translator"
+title: "mmic_mda"
 date: 2021-02-13
 draft: true
 developer: Andrew Abi-Mansour, Irfan Alibay, Lily Wang
@@ -22,20 +22,21 @@ This component is *usable* with a *stable* **API** and **schemas**. However, it 
 {{< /siteBlue >}}
 
 # Design
-This package provides translators between [MMSchema](/mmschema) and [MDAnalysis](https://github.com/MDAnalysis/mdanalysis) for the following objects: molecule, forcefield, and trajectory. The models for each object is, respectively: MdaMol, MdaFF, and MdaTraj. The `from_schema` and `to_schema` methods in each model use translation components to convert between MMSchema and MDAnalysis.
+This package provides translators between [MMSchema](/mmschema) and [MDAnalysis](https://github.com/MDAnalysis/mdanalysis) for the following objects: molecule, forcefield, and trajectory. The models for each object is, respectively: MdaMol, MdaFF, and MdaTraj. 
+The `from_schema` and `to_schema` methods in each model use translation components to convert between MMSchema and MDAnalysis. Schematic diagram of the component and its data (schemas) flow are shown below.
 
-The input and output models/schemas for this component are `TransInput` and `TransOutput` available from the generic [mmic_translator](https://github.com/MolSSI/mmic_translator) component.
+<img src="https://github.com/MolSSI/mmic_mda/raw/main/mmic_mda/data/imgs/component.png">
 
-{{< figure src="images/summary.png" width="1200" caption="Schematic diagram of the component and its data (schemas) flow.">}}
-
-# Compatibility
-- [mmic_translator](https://github.com/MolSSI/mmic_translator)
+# Schemas
 
 # Snippet
 {{< tabsCode
     file1="/content/components/translators/mdanalysis/models.md" title1="Models" language1="python" icon1="python"
     file2="/content/components/translators/mdanalysis/components.md" title2="Components" language2="python" icon2="python"
 >}}
+
+# Inheritance
+This component is a subcomponent of [mmic_translator](https://github.com/MolSSI/mmic_translator).
 
 ### Copyright
 Copyright (c) 2021, MolSSI
