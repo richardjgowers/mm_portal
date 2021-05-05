@@ -11,7 +11,7 @@ showInMenu: true
 MMSchema is a specification for classical particle mechanics with emphasis on Molecular Mechanics (MM). The schema provides a standardized language that enables interoperability between
 different MM codes without restricting any specific workflow.
 
-{{< figure src="images/mmschema.png" width="664" caption="MMSchema provides a specification that enables interoperability between different MM codes .">}}
+{{< figure src="images/mmschema.png" width="709" caption="MMSchema provides a specification for classical mechanics that enables basic interoperability between different MM codes .">}}
 
 Currently, MMSchema is a [JSON](https://www.json.org) schema; comptability with the [hdf5](https://www.hdfgroup.org/solutions/hdf5) format is being developed, and other formats 
 such as the Apache [ORC](https://orc.apache.org) are being considered as well.
