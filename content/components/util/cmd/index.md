@@ -22,7 +22,7 @@ This component is *usable* but not yet stable. Its schemas might significantly c
 To be completed ...
 
 # Documentation
-- <a href="https://molssi.github.io/mmic_cmd/api.html" target="_blank">API</a>
+- <a href="https://molssi.github.io/mmic_cmd/api.html" target="_blank">Components</a>
 - <a href="https://molssi.github.io/mmic_cmd/models.html" target="_blank">Schemas</a>
 
 # Requirements
