@@ -1,12 +1,12 @@
 ---
-title: "AutoDock Vina simulator"
+title: "mmic_autodock_vina"
 developer: Andrew Abi-Mansour
 draft: true
 hideLastModified: false
 showInMenu: false
 summaryImage: "images/icon.png" 
 summary: "Performs molecular docking with AutoDock Vina"
-tags: ["Simulators"]
+tags: ["Simulators", "Tactic"]
 ---
 
 {{< siteBlue "Unreleased" "https://github.com/MolSSI/mmic_autodock_vina" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Molecular docking simulator"
+title: "mmic_docking"
 developer: Levi Naden, Sam Ellis, Andrew Abi-Mansour
 draft: true
 hideLastModified: false
 showInMenu: false
 summaryImage: "images/icon.png" 
 summary: "Performs molecular docking with any of the supported docking components"
-tags: ["Simulators", "Generic"]
+tags: ["Simulators", "Strategy"]
 ---
 
 {{< siteBlue "Experimental" "https://github.com/MolSSI/mmic_docking" >}}

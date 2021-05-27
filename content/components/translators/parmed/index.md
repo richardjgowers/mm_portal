@@ -7,7 +7,7 @@ hideLastModified: false
 showInMenu: false
 summaryImage: "images/icon.png"
 summary: "Provides translators between MMSchema and ParmEd"
-tags: ["Translators", "MMSchema"]
+tags: ["Translators", "MMSchema", "Tactic"]
 ---
 
 {{< siteBlue "Unreleased" "https://github.com/MolSSI/mmic_parmed" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Gromacs energy optimzer"
+title: "mmic_optim_gmx"
 draft: true
 hideLastModified: false
-developer: Xu Guo, Andrew Abi-Mansour
+developer: Xu Guo
 showInMenu: false
 summaryImage: "images/icon.png" 
 summary: "Performs energy minimization with Gromacs"
-tags: ["Simulators"]
+tags: ["Simulators", "Tactic"]
 ---
 
 {{< siteBlue "Unreleased" "https://github.com/MolSSI/mmic_optim_gmx" >}}

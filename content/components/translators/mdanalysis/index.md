@@ -7,7 +7,7 @@ hideLastModified: false
 showInMenu: false
 summaryImage: "images/icon.png"
 summary: "Provides translators between MMSchema and MDAnalysis"
-tags: ["Translators", "MMSchema"]
+tags: ["Translators", "MMSchema", "Tactic"]
 ---
 
 

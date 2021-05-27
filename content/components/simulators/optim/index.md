@@ -1,12 +1,12 @@
 ---
-title: "Energy optimzer"
+title: "mmic_optim"
 draft: true
 hideLastModified: false
 developer: Andrew Abi-Mansour
 showInMenu: false
 summaryImage: "images/icon.png" 
 summary: "Performs energy minimization with any of the supported optimization components"
-tags: ["Simulators"]
+tags: ["Simulators", "Strategy"]
 ---
 
 {{< siteBlue "Unreleased" "https://github.com/MolSSI/mmic_optim" >}}
