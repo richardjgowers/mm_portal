@@ -27,19 +27,21 @@ output_model = Component.compute(input_model)
 {{< /code >}}
 
 
-The MMIC package is written in python. For more info about the API and component design, see the data validation <a href="#data_valid">section</a> and the online <a href="https://github.com/MolSSI/MMIC">documentation</a>.
+The MMIC package is written in python. The design and component types in MMIC are discussed in the next 2 sections.
 
 # Component design
-All components in MMIC are subclasses of `ProgramHarness`, which is the most fundamental component in MMIC. Each component must define its input/output classmethods that return the models associated with 
-the component schemas. Since all components have the same API, using any of them implies invoking a single classmethod (`Component.compute`) which internally does the schema validation for the input model, instantiates the component object, 
-calls `Component.execute` method that returns the output model, which is finally validated before it is returned to the calling process. This is summarized in the flowchart below for the 
+All components in MMIC are subclasses of [ProgramHarness]((https://github.com/MolSSI/mmic/blob/main/mmic/components/base/base_component.py#L8)), which is the most fundamental component in MMIC. This class
+performs data validation and program execution, and it provides input/output classmethods that return the models associated with the component schemas. Since all components have the same API, using any of 
+them implies invoking a single classmethod (`Component.compute`) which internally does the schema validation for the input model, instantiates the component object, calls `Component.execute` method 
+that returns the output model, which is finally validated before it is returned to the calling process. This is summarized in the flowchart below for the 
 `Component.compute` method.
 
 <p class="aligncenter">
 <img src="/images/mmic_flowchart.svg">
 </p>
 
-The fundamendal class that performs data validation and program execution is [ProgramHarness](https://github.com/MolSSI/mmic/blob/main/mmic/components/base/base_component.py#L8). See the online <a href="https://github.com/MolSSI/MMIC">documentation</a> for more info. To learn about how components are designed in practice, see the "getting started" [tutorial](/tutorials/getting_started).
+There are several types of subclasses of `ProgramHarness` which are discussed in the next section. For more information on the MMIC design, see the online <a href="https://github.com/MolSSI/MMIC">documentation</a>. 
+To learn about how components are designed in practice, see the "getting started" [tutorial](/tutorials/getting_started).
 
 # Component types
 There are 3 distinct and general types of *blueprint* components that could be used when designing a new component in MMIC. 
@@ -55,4 +57,4 @@ GROMACS normal mode analysis, etc.).
 
 The main objective behind this design is to provide an easy and intuitive way of handling common (but not universal) features available in different MM codes. 
 If *feature1* is requested in a workflow, and this feature is available in *MM code1* but not in *MM code2*, `StrategyComponent` runs the execution with a `TacticComponent` that supprots *MM code1*. 
-`StrategyComponent` therefore automates the selection and execution of an available and compatible `TacticComponent` in runtime, enabling a higher level of abstraction.
+`StrategyComponent` therefore automates the runtime selection and execution of an available and compatible `TacticComponent`, enabling a higher level of abstraction.
