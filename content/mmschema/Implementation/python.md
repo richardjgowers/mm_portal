@@ -3,8 +3,10 @@ title: "MMElemental"
 date: 2021-02-12
 draft: true
 hideLastModified: true
-showInMenu: true
-# no need for the "summary" parameter as it is not displayed in any previews
+showInMenu: false
+summary: Python implementation of the MMSchema standard
+developer: MolSSI
+link: https://github.com/MolSSI/mmelemental
 ---
 
 # What is MMElemental?
