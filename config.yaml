@@ -92,6 +92,7 @@ params:
     fontFamily: "Open Sans"
     # option to show the little logos on the side of the navbar items
     showIcons: true
+    showMenuIcons: false
     
   # 404 page options
   pagNotFound:
