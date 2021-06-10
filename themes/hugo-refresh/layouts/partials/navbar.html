@@ -39,6 +39,12 @@
     {{- if .Site.Params.navbar.showIcons -}}
       {{- $showIcons = .Site.Params.navbar.showIcons -}}
     {{- end -}}
+
+    {{- $showMenuIcons := false -}}
+    {{- if .Site.Params.navbar.showMenuIcons -}}
+      {{- $showMenuIcons = .Site.Params.navbar.showMenuIcons -}}
+    {{- end -}}
+
     {{- $mainColour := .Site.Params.mainColour -}}
     <div id="navbar-menu" class="navbar-menu is-static">
       <!-- <div class="navbar-start"></div> -->
@@ -78,8 +84,8 @@
             {{- if (ne $secCount 0) }}
             <div class="navbar-item has-dropdown is-hoverable">
               <a href="{{- .Permalink | relURL -}}" class="navbar-link">
-                {{- if $showIcons -}}
-                  <i class="fa fa-book" style="color:{{- print $mainColour -}};">&nbsp;</i>
+                {{- if $showMenuIcons -}}
+                  <i class="fa fa-random" style="color:{{- print $mainColour -}};">&nbsp;</i>
                 {{- end -}}
                 {{- .Title -}}
               </a>
@@ -91,14 +97,13 @@
                 <a href="{{- .Permalink | relURL -}}" class="navbar-item">
                   {{- .Title -}}
                 </a>
-                ayre fikon!
                 {{- end -}}
               </div>
             </div>
             {{- else -}}
             <a href="{{- .Permalink | relURL -}}" class="navbar-item is-secondary">
-              {{- if $showIcons -}}
-                <i class="fa fa-random" style="color:{{- print $mainColour -}};">&nbsp;</i>
+              {{- if $showMenuIcons -}}
+                <i class="fa fa-book" style="color:{{- print $mainColour -}};">&nbsp;</i>
               {{- end -}}
               {{- .Title -}}
             </a>
