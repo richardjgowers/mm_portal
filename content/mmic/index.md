@@ -56,5 +56,5 @@ GROMACS normal mode analysis, etc.).
 </p>
 
 The main objective behind this design is to provide an easy and intuitive way of handling common (but not universal) features available in different MM codes. 
-If *feature1* is requested in a workflow, and this feature is available in *MM code1* but not in *MM code2*, `StrategyComponent` runs the execution with a `TacticComponent` that supprots *MM code1*. 
+If *feature1* is requested in a workflow, and this feature is available in *MM code1* but not in *MM code2*, `StrategyComponent` runs the execution with a `TacticComponent` that supports *MM code1*. 
 `StrategyComponent` therefore automates the runtime selection and execution of an available and compatible `TacticComponent`, enabling a higher level of abstraction.
