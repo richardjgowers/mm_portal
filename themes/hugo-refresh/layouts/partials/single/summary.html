@@ -57,14 +57,18 @@
       <p class="refresh-summary">
         {{- if .Params.developer -}}
           <b>Developer</b>: {{ .Params.developer }}
-        {{- else }}
-          <b>Developer</b>: Unknown
         {{- end -}}
       </p>
       <div class="action has-text-right">
-        <a href="{{- .Permalink | relURL -}}" class="button is-primary">
-                {{ i18n "readMore" }}
+        {{- if .Params.link -}}
+            <a href="{{- .Params.link -}}" class="button is-primary">
+                    {{ i18n "readMore" }}
             </a>
+        {{- else }}
+            <a href="{{- .Permalink | relURL -}}" class="button is-primary">
+                    {{ i18n "readMore" }}
+            </a>
+        {{- end -}}
       </div>
     </div>
   </div>
