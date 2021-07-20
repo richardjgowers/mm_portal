@@ -30,18 +30,22 @@
           {{- .Scratch.Set "image" ($image.Resize "600x") -}}
           {{- $image = .Scratch.Get "image" -}}
         {{- end }}
-        <a href="{{- .Permalink | relURL -}}">
-        {{ if .Page.Params.keepImageRatio }}
+        {{- if .Params.link -}}
+            <a href="{{- .Params.link -}}">
+        {{- else -}}
+            <a href="{{- .Permalink | relURL -}}">
+        {{- end -}}
+        {{- if .Page.Params.keepImageRatio -}}
           {{ $w := mul (div $imgWidth 3) 2 }} {{/* is-3by2*/}}
           {{ $h := $imgHeight }} 
-          {{ if not (gt $w $h) }}
+          {{- if not (gt $w $h) -}}
             <img src="{{- $image.Permalink | relURL -}}" style="width: auto; margin:auto" alt="">
-          {{ else }}
+          {{- else -}}
             <img src="{{- $image.Permalink | relURL -}}" style="height: auto; margin:auto" alt="">
-          {{ end }}
-        {{ else }}
+          {{- end -}}
+        {{- else -}}
           <img src="{{- $image.Permalink | relURL -}}" alt="">
-        {{ end }}
+        {{- end -}}
         </a>
       </figure>
       <h3 class="title is-5 refresh-summary-title">
@@ -50,7 +54,7 @@
       <p class="refresh-summary">
         {{- if .Params.summary -}}
           {{- .Params.summary -}}
-        {{- else }}
+        {{- else -}}
           {{- .Plain -}}
         {{- end -}}
       </p> 
