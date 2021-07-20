@@ -6,7 +6,7 @@ hideLastModified: true
 showInMenu: false
 summary: Python implementation of the MMSchema standard
 developer: MolSSI
-link: https://github.com/MolSSI/mmelemental
+link: https://molssi.github.io/mmelemental
 ---
 
 # What is MMElemental?
