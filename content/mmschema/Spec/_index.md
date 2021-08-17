@@ -3,5 +3,5 @@ title: "Specification"
 draft: true
 hideLastModified: true
 showInMenu: true
-summary: The MMSchema specification
+# no need for the "summary" parameter as it is not displayed in any previews
 ---
