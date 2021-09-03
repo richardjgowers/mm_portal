@@ -1,0 +1,106 @@
+{
+   "mmic_cmd":{
+      "image":"static/components/icons/cmd.png",
+      "link":"https://github.com/MolSSI/mmic_cmd",
+      "tags":[
+         "util"
+      ],
+      "summary":"Provides utilities for command-line execution.",
+      "developer":"MolSSI"
+   },
+   "mmic_ffpa":{
+      "image":"https://www.pnas.org/content/106/37/15667/F1.large.jpg",
+      "link":"https://github.com/MolSSI/mmic_ffpa",
+      "tags":[
+         "forcefields",
+         "assigners",
+         "strategy"
+      ],
+      "summary":"Assigns force field parameters with any of the supported forcefield assignment components.",
+      "developer":"MolSSI"
+   },
+   "mmic_ffpa_gmx":{
+      "link":"https://github.com/MolSSI/mmic_ffpa_gmx",
+      "image":"static/components/icons/gromacs.png",
+      "tags":[
+         "gromacs",
+         "forcefields",
+         "assigners",
+         "tactic"
+      ],
+      "summary":"Assigns force field parameters to molecules based on existing force fields using Gromacs.",
+      "developer":"MolSSI"
+   },
+   "mmic_docking":{
+      "image":"static/components/icons/docking.png",
+      "link":"https://github.com/MolSSI/mmic_docking",
+      "tags":[
+         "simulators",
+         "strategy"
+      ],
+      "summary":"Performs molecular docking with any of the supported docking components.",
+      "developer":"MolSSI"
+   },
+   "mmic_autodock_vina":{
+      "image":"static/components/icons/autodock_vina.png",
+      "link":"https://github.com/MolSSI/mmic_autodock_vina",
+      "tags":[
+         "simulators",
+         "tactic"
+      ],
+      "summary":"Performs molecular docking with AutoDock Vina.",
+      "developer":"MolSSI"
+   },
+   "mmic_optim":{
+      "link":"https://github.com/MolSSI/mmic_optim",
+      "tags":[
+         "simulators",
+         "strategy"
+      ],
+      "summary":"Performs energy minimization with any of the supported optimization components.",
+      "developer":"MolSSI"
+   },
+   "mmic_optim_gmx":{
+      "link":"https://github.com/MolSSI/mmic_optim_gmx",
+      "image":"static/components/icons/gromacs.png",
+      "tags":[
+         "simulators",
+         "tactic",
+         "gromacs"
+      ],
+      "summary":"Performs energy minimization with Gromacs.",
+      "developer":"Xu Guo"
+   },
+   "mmic_translator":{
+      "link":"https://github.com/MolSSI/mmic_translator",
+      "tags":[
+         "translators",
+         "strategy",
+         "mmschema"
+      ],
+      "summary":"Converts between MMSchema and data/file objects or other specifications.",
+      "developer":"MolSSI"
+   },
+   "mmic_mda":{
+      "link":"https://github.com/MolSSI/mmic_mda",
+      "image":"static/components/icons/mdanalysis.png",
+      "tags":[
+         "translators",
+         "tactic",
+         "mmschema"
+      ],
+      "summary":"Provides converters between MMSchema and MDAnalysis..",
+      "developer":"MolSSI"
+   },
+   "mmic_parmed":{
+      "link":"https://github.com/MolSSI/mmic_parmed",
+      "image":"static/components/icons/parmed.png",
+      "tags":[
+         "translators",
+         "tactic",
+         "mmschema"
+      ],
+      "summary":"Provides converters between MMSchema and ParmEd.",
+      "developer":"MolSSI"
+   },
+}
