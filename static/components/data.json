@@ -103,4 +103,15 @@
       "summary":"Provides converters between MMSchema and ParmEd.",
       "developer":"MolSSI"
    },
+   "mmic_qcschema":{
+      "link":"https://github.com/MolSSI/mmic_qcschema",
+      "image":"static/components/icons/qcschema.png",
+      "tags":[
+         "translators",
+         "tactic",
+         "mmschema"
+      ],
+      "summary":"Provides converters between MMSchema and QCSchema.",
+      "developer":"MolSSI"
+   }
 }
