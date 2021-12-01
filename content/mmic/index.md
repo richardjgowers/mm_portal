@@ -30,7 +30,7 @@ output_model = Component.compute(input_model)
 The MMIC package is written in python. The design and component types in MMIC are discussed in the next 2 sections.
 
 # Component design
-All components in MMIC are subclasses of [ProgramHarness]((https://github.com/MolSSI/mmic/blob/main/mmic/components/base/base_component.py#L8)), which is the most fundamental component in MMIC. This class
+All components in MMIC are subclasses of [ProgramHarness](https://github.com/MolSSI/mmic/blob/main/mmic/components/base/base_component.py#L8), which is the most fundamental component in MMIC. This class
 performs data validation and program execution, and it provides input/output classmethods that return the models associated with the component schemas. Since all components have the same API, using any of 
 them implies invoking a single classmethod (`Component.compute`) which internally does the schema validation for the input model, instantiates the component object, calls `Component.execute` method 
 that returns the output model, which is finally validated before it is returned to the calling process. This is summarized in the flowchart below for the 
